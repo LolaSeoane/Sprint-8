@@ -1,0 +1,47 @@
+<p>ship-card works!</p>
+<ng-container *ngIf="ship; else loader">
+    
+
+    <div class="building-block container card ">
+
+        <div class="row">
+            <h3 class="card-title align-text-center"><strong>{{ ship.name }}</strong></h3>
+            <div class="starship-image card-img-top">
+                <img src="{{ urlImg }}/{{ id }}.jpg"
+                    onerror="this.src='https://starwars-visualguide.com/assets/img/big-placeholder.jpg'">
+            </div>
+        </div>
+    
+        <hr>
+    
+        <div class="starship-data card-body row">
+    
+            <div class="col">
+                <p><strong>Model: </strong>{{ ship.model }}</p>
+                <p><strong>Manufacturer: </strong>{{ ship.manufacturer }}</p>
+                <p><strong>Class: </strong>{{ ship.starship_class }}</p>
+                <p><strong>Cost: </strong>{{ ship.cost_in_credits }}</p>
+                <p><strong>Speed: </strong>{{ ship.max_atmosphering_speed }}</p>
+                <p><strong>Hyperdrive Rating: </strong>{{
+                    ship.hyperdrive_rating }}</p>
+            </div>
+    
+            <div class="col">
+                <p><strong>MGLT: </strong>{{ ship.MGLT }}</p>
+                <p><strong>Length: </strong>{{ ship.length }}</p>
+                <p><strong>Cargo Capacity: </strong>{{ ship.cargo_capacity
+                    }}</p>
+                <p><strong>Mimimum Crew: </strong>{{ ship.crew }}</p>
+                <p><strong>Passengers: </strong>{{ ship.passengers }}</p>
+            </div>
+    
+        </div>
+    </div>  
+ 
+
+</ng-container>
+<ng-template #loader>
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+</ng-template>

@@ -1,0 +1,51 @@
+
+.building-block {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color: #ddd;
+    text-transform: uppercase;
+    font-family: DIN, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+   
+    
+}
+.starship-image {
+    display: flex;
+    justify-content: center;
+}
+
+.starship-image img {
+    
+    width: 70%;
+    height: 70vh;
+    margin-top: 12px;
+    border-style: solid;
+    border-width: 0 0 3px;
+    border-color: #1717e4;
+    
+}
+
+/* Centrar el nombre */
+.card-title {
+    text-align: center;
+   
+  }
+  
+  /* Hacer que los párrafos sean de color blanco */
+  .starship-data p {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Establecer la imagen de fondo */
+  .building-block {
+    background-image: url("/assets/img/background.jpeg");
+    background-size: cover;
+  }
+  
