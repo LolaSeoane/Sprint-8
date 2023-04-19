@@ -1,13 +1,19 @@
 <div class="container">
-    <div class="header">
-        <h1>StarWars</h1>
-    </div>
-  
-<ul>
-  <li (click)="goDetails(starship.name)" *ngFor="let starship of starShipsList">
-    <h3> {{ starship.name }} </h3> 
-    <p> {{ starship.model }} </p> 
-  </li>
-</ul>
+  <div class="header">
+    <h1>StarWars</h1>
+  </div>
 
-</div>
+  <ul>
+    <li (click)="goDetails(starship.name)"
+      *ngFor="let starship of starShipsList | slice:(currentPage - 1) * shipsPerPage:currentPage * shipsPerPage "
+      class="ship-item">
+      <h3>{{ starship.name }}</h3>
+      <p>{{ starship.model }}</p>
+    </li>
+  </ul>
+
+  <div class="col-8 p-2">
+
+    <button *ngIf="starShipsList.length < totalShips" class="btn btn-black" (click)="loadMore()">View more...</button>
+
+  </div>

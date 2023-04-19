@@ -1,4 +1,4 @@
-<p>ship-card works!</p>
+
 <ng-container *ngIf="ship; else loader">
     
 
@@ -7,7 +7,7 @@
         <div class="row">
             <h3 class="card-title align-text-center"><strong>{{ ship.name }}</strong></h3>
             <div class="starship-image card-img-top">
-                <img src="{{ urlImg }}/{{ id }}.jpg"
+                <img src="{{ ship.img }}"
                     onerror="this.src='https://starwars-visualguide.com/assets/img/big-placeholder.jpg'">
             </div>
         </div>

@@ -6,6 +6,7 @@ export interface Response {
 }
 export interface Ship{
     name:                   string;
+    img:                    string;
     model:                  string;
     manufacturer:           string;
     cost_in_credits:        string;

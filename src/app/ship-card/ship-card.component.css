@@ -1,13 +1,9 @@
 
-.building-block {
-    margin-bottom: 3rem;
-    font-size: 1rem;
-}
 
 h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.3em;
-    color: #ddd;
+    color:rgba(255, 255, 255, 0.812);
     text-transform: uppercase;
     font-family: DIN, Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -38,7 +34,7 @@ h3 {
   
   /* Hacer que los párrafos sean de color blanco */
   .starship-data p {
-    color: white;
+    color:rgba(255, 255, 255, 0.812);
     display: flex;
     justify-content: center;
   }
