@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-stars pt-4 mb-0 sticky-top justify-content-center">
+    <div class="row w-100">
+        <div class="container text-center">
+            <div class="d-flex flex-wrap flex-md-nowrap">
+                <div id="nav-external-links" class="social col-12 col-md-4">
+                    <ul id="social-links">
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" data-cto="social" title="facebook">
+                                <span class="facebook-icon nav-link "></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" data-cto="social" title="instagram">
+                                <span class="instagram-icon nav-link"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer" data-cto="social" title="twitter">
+                                <span class="twitter-icon nav-link"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="youtub " href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer" data-cto="social" title="youtube">
+                                <span class="youtube-icon nav-link"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="sw-kids-container">
+                        <a class="sw-kids" href="https://starwarskids.com/" target="_blank" rel="noopener noreferrer"
+                            title="Star Wars Kids" data-cto="swkids">
+                            <span class="sw-kids-icon nav-link"></span>
+                    </a>
+                    </span>
+                    <div id="chrome-controls-container">
+                        <div id="chrome-controls">
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand col-md-4 col-12" href="#">
+                    <img id="logo" src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png" alt="">
+                    <img id="logo2" src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_horiz_2x-f98247cb30aa_c622cfa9.png?region=0,0,732,75" alt="">
+                </a>
+                <ng-container class="col-4" *ngIf="!usersService.loggedIn(); else LoggedIn">
+                    <div class="d-flex justify-content-end text-align-center col-12 col-md-3">
+                        <li class="nav-item col-6 col-md-2">
+                            <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a></li>
+                        <p class="align-self-center " style="color: #343434;">//</p>
+                        <li class="nav-item col-6 col-md-2">
+                            <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a></li>
+                    </div>
+
+                </ng-container>
+                <ng-template class="col-4" #LoggedIn>
+                    <li class="nav-item col-md-4 col-12">
+                        <a href="" class="nav-link" (click)="usersService.logout()">Logout</a></li>
+                </ng-template>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center order">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-grid mx-auto mt-3 mb-0" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="home" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="starships">Starships</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

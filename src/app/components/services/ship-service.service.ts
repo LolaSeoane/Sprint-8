@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Ship } from './interfaces/ship.interface';
+import { Ship } from '../../interfaces/ship.interface';
 
 
 

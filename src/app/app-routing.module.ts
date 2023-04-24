@@ -1,32 +1,44 @@
-import { ShipCardComponent } from './ship-card/ship-card.component';
+import { AuthGuard } from './components/guards/auth.guard';
+import { ShipCardComponent } from './components/ship-card/ship-card.component';
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StarshipsComponent } from './starships/starships.component';
+import { StarshipsComponent } from './components/starships/starships.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent
+    path: '',
+    component: HomeComponent
   },
   {
-    path:'starships',
-    children:[
+    path: 'starships',
+    children: [
       {
-        path:'',
-        component:StarshipsComponent
-      },{
-        path:':id',
-        component:ShipCardComponent
+        path: '',
+        component: StarshipsComponent
+      }, {
+        path: ':id',
+        component: ShipCardComponent,
+        canActivate:[AuthGuard]
       }
     ]
   },
-{
-  path:'**',
-  redirectTo:'',
-  pathMatch: 'full'
-}];
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

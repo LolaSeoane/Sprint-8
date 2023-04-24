@@ -29,8 +29,7 @@
             <div class="col">
                 <p><strong>MGLT: </strong>{{ ship.MGLT }}</p>
                 <p><strong>Length: </strong>{{ ship.length }}</p>
-                <p><strong>Cargo Capacity: </strong>{{ ship.cargo_capacity
-                    }}</p>
+                <p><strong>Cargo Capacity: </strong>{{ ship.cargo_capacity}}</p>
                 <p><strong>Mimimum Crew: </strong>{{ ship.crew }}</p>
                 <p><strong>Passengers: </strong>{{ ship.passengers }}</p>
             </div>
@@ -41,7 +40,8 @@
 
 </ng-container>
 <ng-template #loader>
-    <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div>
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
 </ng-template>

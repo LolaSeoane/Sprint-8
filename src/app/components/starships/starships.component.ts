@@ -1,8 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ShipServiceService } from '../ship-service.service';
-import { Ship } from '../interfaces/ship.interface';
+import { ShipServiceService } from '../services/ship-service.service';
+import { Ship } from '../../interfaces/ship.interface';
 
 @Component({
   selector: 'app-starships',

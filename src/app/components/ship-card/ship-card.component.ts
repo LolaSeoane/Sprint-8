@@ -1,8 +1,8 @@
 
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Ship } from '../interfaces/ship.interface';
-import { ShipServiceService } from '../ship-service.service';
+import { Ship } from '../../interfaces/ship.interface';
+import { ShipServiceService } from '../services/ship-service.service';
 
 @Component({
   selector: 'app-ship-card',
