@@ -18,11 +18,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: StarshipsComponent
+        component: StarshipsComponent,
+        canActivate:[AuthGuard]
       }, {
         path: ':id',
         component: ShipCardComponent,
-        canActivate:[AuthGuard]
       }
     ]
   },

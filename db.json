@@ -15,6 +15,14 @@
       "lastname": "Lola",
       "age": "1",
       "id": 2
+    },
+    {
+      "email": "sergi@gmail.com",
+      "password": "$2a$10$8IDBUrZ5R74AChDmCxh8e.RzeLpuiVXxC3d1SN1WWZ2rZu4Apq6Lm",
+      "firstname": "sergi",
+      "lastname": "sergi",
+      "age": "2",
+      "id": 3
     }
   ]
 }

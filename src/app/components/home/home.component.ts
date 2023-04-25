@@ -11,17 +11,17 @@ export class HomeComponent {
 
     {
       name:'Badbatch',
-      img: '/Sprint-8/src/assets/home-img/badbatch.jpeg',
+      img: './../assets/home-img/badbatch.jpeg',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
     },
 
     { name:'Mandalorian',
-      img: '/Sprint-8/src/assets/home-img/mando.webp',
+      img: './../assets/home-img/mando.webp',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
     },
     {
       name:'Badbatch ',
-      img: '/Sprint-8/src/assets/home-img/badbatch2.webp',
+      img: './../assets/home-img/badbatch2.webp',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
 
     },

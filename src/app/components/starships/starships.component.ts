@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { ShipServiceService } from '../services/ship-service.service';
 import { Ship } from '../../interfaces/ship.interface';
@@ -15,7 +16,7 @@ export class StarshipsComponent implements OnInit {
   shipsPerPage = 10;
   totalShips = 36;
 
-  constructor(private shipService: ShipServiceService, private router: Router) { }
+  constructor(private shipService: ShipServiceService, private router: Router,public route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.shipService.getShips(this.currentPage);
