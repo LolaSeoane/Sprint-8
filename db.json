@@ -7,6 +7,14 @@
       "lastname": "admin",
       "age": "1",
       "id": 1
+    },
+    {
+      "email": "lola@gmail.com",
+      "password": "$2a$10$W11XbSNtOrMr/wRSItoWj.99BBhD1YGO2RhZyJlGPfAoxRDUuxOpK",
+      "firstname": "Lola",
+      "lastname": "Lola",
+      "age": "1",
+      "id": 2
     }
   ]
 }

@@ -22,7 +22,6 @@ loginError!: boolean;
 
   public ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      
       email:['',Validators.compose([Validators.email,Validators.required])],
       password:['',Validators.compose([Validators.minLength(6),Validators.required],)]
     });
