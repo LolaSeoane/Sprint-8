@@ -1,8 +1,4 @@
 <div class="container">
-  <div class="header">
-    <h1>Starships</h1>
-  </div>
-
   <ul>
     <li (click)="goDetails(starship.name)"
       *ngFor="let starship of starShipsList | slice:(currentPage - 1) * shipsPerPage:currentPage * shipsPerPage "
@@ -11,9 +7,6 @@
       <p>{{ starship.model }}</p>
     </li>
   </ul>
-
   <div class="col-8 p-2">
-
     <button *ngIf="starShipsList.length < totalShips" class="btn btn-black" (click)="loadMore()">View more...</button>
-
   </div>
