@@ -1,3 +1,21 @@
 <p>home works!</p>
-<app-header></app-header>
+
 <!--<button type="button" class="btn btn-outline-primary">go starships</button>-->
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let serie of series">
+      <img src="{{serie.img}}" alt="{{serie.name}}">
+      <div class="carousel-caption">
+        <h3>{{serie.name}}</h3>
+        <p>{{serie.desc}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
+
+<div class="container">
+	<div class="row py-4">
+		<div class="col-12 d-flex justify-content-center">
+			<img class="childImg" src="Sprint-8/src/assets/home-img/badbach3webp.webp">
+		</div>
+    </div>
+</div>
