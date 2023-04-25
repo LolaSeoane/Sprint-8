@@ -2,7 +2,7 @@ import { AuthGuard } from './components/guards/auth.guard';
 import { ShipCardComponent } from './components/ship-card/ship-card.component';
 
 import { HomeComponent } from './components/home/home.component';
-import { NgModule} from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StarshipsComponent } from './components/starships/starships.component';
 import { LoginComponent } from './components/login/login.component';

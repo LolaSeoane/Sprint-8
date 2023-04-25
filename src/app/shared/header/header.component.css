@@ -144,13 +144,12 @@
     display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     .sw-kids-container .sw-kids {
         width: 43px;
         height: 15px;
         margin: 3px 0 0 10px;
     }
-
     .sw-kids-container .sw-kids .sw-kids-icon {
         width: 31px;
         height: 9px;
